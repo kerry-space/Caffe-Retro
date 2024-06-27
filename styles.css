@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    font-family: 'Poiret One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Ensures that any gaps are filled with black */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(28, 0, 0, 0.7);
+    z-index: 1000;
+    font-family: 'Spirax', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.8em;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%; /* Increase width to prevent text wrap */
+}
+
+.overlay > p {
+    background-color: darkred;
+    font-size: 2em; /* Increase font size */
+    padding: 20px; /* Add padding for larger appearance */
+    border-radius: 8px;
+    margin: 10px 0; /* Add margin for spacing between paragraphs */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.overlay > h2 {
+    margin-top: -2rem;
+    font-size: 5.8em;
+    font-family: "Spirax", sans-serif;
+}
+
+#hot {
+    background-image: url('./assets/hot.jpg');
+    background-color: darkred;
+}
+
+#juicy {
+    background-image: url('./assets/juicy.jpg');
+}
+
+#cosy {
+    background-image: url('./assets/cosy.jpg');
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0;
+    color: darkred;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.text-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.left, .right {
+    font-size: 2em; 
+    background-color: rgba(139, 0, 0, 0.7); /* Transparent red background */
+    padding: 20px; 
+    border-radius: 8px;
+    margin: 10px 0; 
+    white-space: nowrap; 
+}
+
+.left {
+    left: -88px;
+    position: relative;
+    text-align: left;
+}
+
+.right {
+    right: 18px;
+    position: relative;
+    text-align: right;
+}
+
+.menu, .info {
+    margin-top: 20px;
+    padding: 20px 29px;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.menu-item, .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.menu p, .info p {
+    margin: 5px 0;
+    color: white;
+}
+
+/* Red line styling */
+hr.red-line {
+    border: 0;
+    height: 10px;
+    background: darkred;
+    margin: 0;
+}
